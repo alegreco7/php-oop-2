@@ -50,3 +50,9 @@ $gattoCategoria = new Categoria('Gatto', 'https://arcaplanet.vtexassets.com/arqu
 $uccelliCategoria = new Categoria('Uccelli', 'https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg');
 $pesciCategoria = new Categoria('Pesci', 'https://arcaplanet.vtexassets.com/arquivos/ids/272714/tetra-guppy-mini-flakes.jpg');
 
+
+// Creazione di alcuni prodotti
+$prodotto1 = new Prodotto('Cibo per cani', 20.99, $caneCategoria);
+$prodotto2 = new Prodotto('Cibo per gatti', 15.49, $gattoCategoria);
+$prodotto3 = new Prodotto('Voliera', 89.99, $uccelliCategoria);
+$prodotto4 = new Prodotto('Cibo per pesci', 12.99, $pesciCategoria);
