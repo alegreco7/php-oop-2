@@ -44,4 +44,9 @@ class Categoria {
     }
 }
 
-?>
+// Creazione delle categorie
+$caneCategoria = new Categoria('Cane', 'https://arcaplanet.vtexassets.com/arquivos/ids/284621/Mini-Adult.jpg?v=638182891693570000'); 
+$gattoCategoria = new Categoria('Gatto', 'https://arcaplanet.vtexassets.com/arquivos/ids/245336/almo-daily-menu-cat-400-gr-vitello.jpg');
+$uccelliCategoria = new Categoria('Uccelli', 'https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg');
+$pesciCategoria = new Categoria('Pesci', 'https://arcaplanet.vtexassets.com/arquivos/ids/272714/tetra-guppy-mini-flakes.jpg');
+
