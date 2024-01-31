@@ -56,3 +56,21 @@ $prodotto1 = new Prodotto('Cibo per cani', 20.99, $caneCategoria);
 $prodotto2 = new Prodotto('Cibo per gatti', 15.49, $gattoCategoria);
 $prodotto3 = new Prodotto('Voliera', 89.99, $uccelliCategoria);
 $prodotto4 = new Prodotto('Cibo per pesci', 12.99, $pesciCategoria);
+
+// Funzione per stampare la card del prodotto
+function stampaCardProdotto($prodotto) {
+    echo '<div class="card">';
+    echo '<img src="' . $prodotto->getCategoria()->getIcona() . '" alt="' . $prodotto->getCategoria()->getNome() . '">';
+    echo '<h3>' . $prodotto->getNome() . '</h3>';
+    echo '<p>Prezzo: $' . $prodotto->getPrezzo() . '</p>';
+    echo '<p>Categoria: ' . $prodotto->getCategoria()->getNome() . '</p>';
+    echo '</div>';
+}
+
+// Stampa delle card dei prodotti
+stampaCardProdotto($prodotto1);
+stampaCardProdotto($prodotto2);
+stampaCardProdotto($prodotto3);
+stampaCardProdotto($prodotto4);
+
+?>
